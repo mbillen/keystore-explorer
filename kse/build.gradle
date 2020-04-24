@@ -149,7 +149,7 @@ task launch4j(dependsOn: jar) {
 					errTitle: appName,
 					stayAlive: "false",
 					icon: kseIco ) {
-				jre(minVersion: "1.8.0", path: "jre") {
+				jre(minVersion: "1.8.0", path: "%JAVA_HOME%") {
 					opt = "-Dkse.exe=true"
 				}
 				versionInfo(fileVersion: "$appVersion.0",
